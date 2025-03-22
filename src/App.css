@@ -36,3 +36,79 @@
     transform: rotate(360deg);
   }
 }
+
+/* Style for the navbar */
+.navbar {
+  background-color: whitesmoke;
+  border-bottom: 2px solid #cccccc; 
+ 
+  margin: 5px 20px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100%;
+}
+
+.navbar-text {
+  background: linear-gradient(70deg, rgba(106, 98, 98, 0.838) 0%, rgba(244, 244, 249, 0.945) 100%); /* Grey gradient */
+  color: transparent; /* Remove default text color */
+  background-clip: text; /* Clip the gradient to the text */
+  -webkit-background-clip: text; /* For Safari */
+  font-size: 1.5rem; /* Adjust font size */
+  font-weight: bold; /* Make the text bold */
+
+  text-align: center; /* Ensure text is centered */
+  display: block; /* Ensure it behaves like a block element */
+  width: 100%;
+}
+
+/* form styling */
+
+body {
+  background-color: whitesmoke; /* Set background to whitesmoke */
+}
+
+/* Text color for labels */
+.form-label {
+  color: #42424282; 
+}
+
+#select{
+  color: 42424282;
+}
+
+input[type="number"], select {
+  border: 2px solid #cccccc; /* Add a 2px border */
+  border-radius: 5px; /* Add border radius to make it rounded */
+  padding: 0.5rem; /* Add padding for better spacing inside */
+  width: 100%; /* Make sure inputs take up the full width */
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+/* Styling the submit button */
+button[type="submit"] {
+  background-color: white;
+  border: 2px solid #cccccc;
+  color: #333333;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  width: 100%;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect for the button */
+button[type="submit"]:hover {
+  background-color: #d3d3d3;
+  color: white;
+  border: 2px solid transparent;
+  background-image: linear-gradient(90deg, rgba(169, 169, 169, 0.957) 0%, rgba(211,211,211,1) 100%);
+}
+
+

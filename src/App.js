@@ -1,25 +1,39 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Navbar from './components/Navbar';
+import InputForm from './components/InputForm';
+import Result from './components/Result';
+import { calculateIntegral } from './components/Calculation';
 import './App.css';
 
-function App() {
+const App = () => {
+  const [result, setResult] = useState(null);
+
+  const handleCalculate = (coefficients) => {
+    if (!coefficients) {
+      console.error("Invalid coefficients received");
+      return;
+    }
+
+    // Example calculation (replace this with actual integral logic)
+    // const calculatedResult = 
+    //   parseFloat(coefficients.a || 0) + parseFloat(coefficients.b || 0) + parseFloat(coefficients.c || 0);
+
+    // console.log("Calculation result:", calculatedResult);
+    // setResult(calculatedResult); // Set the calculated result
+
+    const calculatedResult = calculateIntegral(coefficients); // Call the integral calculation function
+    console.log("Calculation result:", calculatedResult);
+    setResult(calculatedResult); // Set the calculated result
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <InputForm onCalculate={handleCalculate} />
+      {result !== null && <Result result={result} />}
+    </>
   );
-}
+};
+
 
 export default App;
