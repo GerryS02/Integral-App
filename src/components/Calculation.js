@@ -1,5 +1,10 @@
 // calculation.js
 export const calculateIntegral = ({ a, b, x2_coefficient, x_coefficient, constant, method }) => {
+  // If a == b, return 0 immediately
+  if (a === b) {
+    return 0;
+  }
+  
   const INCREMENT = 0.5;
   const h = INCREMENT;
 

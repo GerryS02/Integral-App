@@ -111,4 +111,24 @@ button[type="submit"]:hover {
   background-image: linear-gradient(90deg, rgba(169, 169, 169, 0.957) 0%, rgba(211,211,211,1) 100%);
 }
 
+.card {
+  border-radius: 10px; /* Round the corners of cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+}
 
+h4 {
+  background: linear-gradient(70deg, rgba(106, 98, 98, 0.838) 0%, rgba(244, 244, 249, 0.945) 100%); /* Grey gradient */
+  color: transparent; /* Remove default text color */
+  background-clip: text; /* Clip the gradient to the text */
+  -webkit-background-clip: text; /* For Safari */
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center the text */
+  display: block; /* Ensure it behaves like a block element */
+  width: 100%;
+}
+
+.label-text {
+  color: #42424282;  
+  font-size: 1rem;    
+  font-weight: normal;
+}
