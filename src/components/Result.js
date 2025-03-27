@@ -63,20 +63,37 @@ const Result = ({ result, inputValues }) => {
   // Dynamically create the LaTeX string for the integral expression
   const integralExpression = `\\[ \\int_{${a}}^{${b}} (${x2_coefficient}x^2 + ${x_coefficient}x + ${constant}) \\, dx \\]`;
 
+  // return (
+  //   <div className="container mt-4">
+      
+  //     <div>
+  //       <p>
+  //         <strong>Approximate:</strong>
+  //       </p>
+  //       <p id="mathjax-container">
+  //         {/** MathJax will process this span */}
+  //         <span>{integralExpression}</span>
+  //       </p>
+  //       <p>
+  //         <strong>Answer:</strong> <span>{result}</span>
+  //       </p>
+  //     </div>
+  //   </div>
+  // );
+
   return (
     <div className="container mt-4">
-      
       <div>
-        <p>
-          <strong>Approximate:</strong>
-        </p>
+        <p className="label-text">Approximate:</p> 
         <p id="mathjax-container">
           {/** MathJax will process this span */}
-          <span>{integralExpression}</span>
+          <span className="result-box">{integralExpression}</span>
         </p>
-        <p>
-          <strong>Answer:</strong> <span>{result}</span>
-        </p>
+        <p className="label-text">Answer:</p> 
+        <span className="result-box">{result}</span>
+        {/* <p>
+          <span>{result}</span>
+        </p> */}
       </div>
     </div>
   );
