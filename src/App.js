@@ -88,6 +88,7 @@ import Navbar from './components/Navbar';
 import InputForm from './components/InputForm';
 import Result from './components/Result';
 import { calculateIntegral } from './components/Calculation';
+import Footer from './components/Footer';
 import './App.css';
 
 const App = () => {
@@ -130,6 +131,7 @@ const App = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

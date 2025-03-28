@@ -114,6 +114,7 @@ button[type="submit"]:hover {
 .card {
   border-radius: 10px; /* Round the corners of cards */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+  margin-bottom: 20px;
 }
 
 h4 {
