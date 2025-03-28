@@ -125,7 +125,6 @@ h4 {
   text-align: center; /* Center the text */
   display: block; /* Ensure it behaves like a block element */
   width: 100%;
-  text-decoration: underline;
 }
 
 .container .label-text {
@@ -144,5 +143,29 @@ h4 {
   background-color: #f4f4f4; 
   font-weight: bold;       
   font-size: 1.2rem;       
+}
+
+/* footer design */
+
+/* Styling for Footer */
+.footer {
+  background-color: whitesmoke; /* Same as navbar */
+  border-top: 2px solid #cccccc; /* Same border style as navbar */
+  margin: 5px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.footer-content {
+  background: linear-gradient(70deg, rgba(106, 98, 98, 0.838) 0%, rgba(244, 244, 249, 0.945) 100%); /* Grey gradient */
+  color: transparent; /* Remove default text color */
+  background-clip: text; /* Clip the gradient to the text */
+  -webkit-background-clip: text; /* For Safari */
+  font-size: 1.5rem; /* Adjust font size */
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center text */
+  display: block; /* Make sure it's displayed as a block element */
 }
 
