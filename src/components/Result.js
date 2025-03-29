@@ -1,4 +1,3 @@
-
 // import React, { useEffect } from 'react';
 
 // const Result = ({ result, inputValues }) => {
@@ -18,7 +17,7 @@
 
 //   // return (
 //   //   <div className="container mt-4">
-      
+
 //   //     <div>
 //   //       <p>
 //   //         <strong>Approximate:</strong>
@@ -37,12 +36,12 @@
 //   return (
 //     <div className="container mt-4">
 //       <div>
-//         <p className="label-text">Approximate:</p> 
+//         <p className="label-text">Approximate:</p>
 //         <p id="mathjax-container">
 //           {/** MathJax will process this span */}
 //           <span className="result-box">{integralExpression}</span>
 //         </p>
-//         <p className="label-text">Answer:</p> 
+//         <p className="label-text">Answer:</p>
 //         <span className="result-box">{result}</span>
 //         {/* <p>
 //           <span>{result}</span>
@@ -137,22 +136,20 @@ const Result = ({ result, inputValues }) => {
 
   return (
     <div className="container mt-4">
-      <h5>Integral Approximation Result:</h5>
-      <p>
-        <strong>
-          {/* Render LaTeX using MathJax dynamically */}
-          <span id="mathjax-expression">{`\\(${integralExpression}\\)`}</span>
-        </strong>
+
+      <p className="label-text">Approximate:</p>
+      {/* <span id="mathjax-expression">{`\\(${integralExpression}\\)`}</span> */}
+      <p id="mathjax-container">
+        {/** MathJax will process this span */}
+        <span className="result-box">{`\\(${integralExpression}\\)`}</span>
+
       </p>
-      <p>
-        <strong>Result:</strong> <span>{result}</span>
-      </p>
+      <p className="label-text">Answer:</p>
+      <span className="result-box">{result}</span>
+      
       <div id="plot" style={{ width: "100%", height: "400px" }}></div>
     </div>
   );
 };
 
 export default Result;
-
-
-
