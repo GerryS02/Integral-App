@@ -195,9 +195,9 @@ While the current implementation works for polynomials with a maximum degree of 
 3. **Custom Number of Subintervals**:
    - Allow users to input the number of subintervals \( n \) instead of fixing it to a constant. This would provide users with more control over the accuracy of the approximation. The value of \( h \) would then be calculated as:
 
-   $
+   $$
    h = \frac{b - a}{n} 
-   $
+   $$
 
 4. **Adaptive Methods**:
    - Implement adaptive numerical methods that adjust the number of subintervals based on the function’s behavior to improve the accuracy of the approximation without requiring the user to manually input \( n \).
