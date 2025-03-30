@@ -163,7 +163,7 @@ $$
 ## How to Use
 
 1. **Enter the Polynomial Coefficients**:
-   - Users enter the values for the polynomial coefficients \( a \), \( b \), and \( c \) corresponding to the terms \( ax^2 + bx + c \).
+   - Users enter the values for the polynomial coefficients \( a \), \( b \), and \( c \) corresponding to the terms $$( ax^2 + bx + c \) $$.
 
 2. **Select the Approximation Method**:
    - Users can choose from the following methods:
