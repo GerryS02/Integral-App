@@ -170,3 +170,17 @@ h4 {
   display: block; /* Make sure it's displayed as a block element */
 }
 
+.error-message {
+  background-color: #3a3a3a !important; /* Dark grey background */
+  color: #d3d3d3 !important; /* Light grey text */
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  border: 1px solid #5a5a5a;
+}
+
+
+
+
