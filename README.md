@@ -102,7 +102,7 @@ The user can select from the following approximation methods:
 ### Key Features:
 - Accepts polynomials with a maximum degree of 2 (i.e., \( ax^2 + bx + c \)).
 - The interval \([a, b]\) is divided into subintervals of a constant size \( h = 0.5 \).
-- The app calculates the integral based on the selected method and displays the result along with a plot of the function and the area under the curve.
+- The app calculates the integral based on the selected method and displays the result along with the integral expression with MathJax and a plot of the function and the area under the curve.
 
 ---
 
