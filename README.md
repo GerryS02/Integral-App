@@ -102,7 +102,7 @@ The user can select from the following approximation methods:
 ### Key Features:
 - Accepts polynomials with a maximum degree of 2 (i.e., \( ax^2 + bx + c \)).
 - The interval \([a, b]\) is divided into subintervals of a constant size \( h = 0.5 \).
-- The app calculates the integral based on the selected method and displays the result along with the inetgral expression and a plot of the function and the area under the curve.
+- The app calculates the integral based on the selected method and displays the result along with a plot of the function and the area under the curve.
 
 ---
 
@@ -195,9 +195,9 @@ While the current implementation works for polynomials with a maximum degree of 
 3. **Custom Number of Subintervals**:
    - Allow users to input the number of subintervals \( n \) instead of fixing it to a constant. This would provide users with more control over the accuracy of the approximation. The value of \( h \) would then be calculated as:
 
-   $$
-   h = \frac{b - a}{n} 
-   $$
+$$
+h = \frac{b - a}{n}
+$$
 
 4. **Adaptive Methods**:
    - Implement adaptive numerical methods that adjust the number of subintervals based on the function’s behavior to improve the accuracy of the approximation without requiring the user to manually input \( n \).
@@ -209,3 +209,4 @@ These enhancements would make the app more powerful and versatile, allowing user
 
 ---
 
+![Image](https://github.com/user-attachments/assets/696d0b8e-26ab-4398-aff8-1958b5a71c8d) 
